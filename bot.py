@@ -1,14 +1,13 @@
 import telebot
 from telebot import types
 import wikipedia
-import consts
 
 CHAT_ID = None
 SAD_FACE = '😔'
 USA_FLAG = '🇺🇸'
 RUS_FLAG = '🇷🇺'
 
-bot = telebot.TeleBot(token=consts.TOKEN)
+bot = telebot.TeleBot(token=MY_TOKEN)
 
 buttons = types.InlineKeyboardMarkup(row_width=1)
 btn_en = types.InlineKeyboardButton(text='English', callback_data='en')
